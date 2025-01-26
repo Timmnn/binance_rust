@@ -1,6 +1,10 @@
 [package]
-name = "binance"
+name = "binance_rust"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1.0.217", features = ["derive"] }
+serde_urlencoded = "0.7.1"
+tokio = { version = "1", features = ["full"] }
